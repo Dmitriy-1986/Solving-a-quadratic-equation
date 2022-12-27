@@ -16,7 +16,7 @@ firstForm.addEventListener('submit', (event) => {
     // Метод toFixed() количество цифр после десятичной запятой
     // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
     if(!isNaN(allValue)) {
-          result.innerHTML = Math.sqrt(allValue).toFixed(2);
+          result.innerHTML = 'Результат: ' + Math.sqrt(allValue).toFixed(2);
     } else {
           result.innerHTML = 'Введите в поле формы число!';
           result.style.color = 'red';
