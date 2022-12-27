@@ -24,4 +24,4 @@ firstForm.addEventListener('submit', (event) => {
     }
 
     firstForm.reset(); // Очищаем поля формы после ее отправки
-})
+});
