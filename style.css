@@ -50,7 +50,7 @@ input[type="text"]:focus {
 
 .btn-submit {
     cursor: pointer;
-    padding: 0.375rem 0.75rem;
+    padding: 0.550rem 0.75rem;
     width: 100%;
     font-weight: bold;
     font-size: 18px;
