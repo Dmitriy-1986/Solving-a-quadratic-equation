@@ -50,11 +50,12 @@ input[type="text"]:focus {
 
 .btn-submit {
     cursor: pointer;
-    padding: 10px;
+    padding: 0.375rem 0.75rem;
     width: 100%;
     font-weight: bold;
     font-size: 18px;
     margin: 0.25rem 0.125rem;
+    border-radius: 0.375rem;
 }
 
 .result {
