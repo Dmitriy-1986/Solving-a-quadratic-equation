@@ -1,10 +1,10 @@
 'use strict';
 
 const firstForm = document.querySelector('#first_form'),
-      meaningA = firstForm.querySelector('#meaning_a'),
-      meaningB = firstForm.querySelector('#meaning_b'),
-      meaningC = firstForm.querySelector('#meaning_c'),
-      result = document.querySelector('.result');
+      meaningA  = firstForm.querySelector('#meaning_a'),
+      meaningB  = firstForm.querySelector('#meaning_b'),
+      meaningC  = firstForm.querySelector('#meaning_c'),
+      result    = document.querySelector('.result');
 
 firstForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Отменить действия формы по умолчанию
