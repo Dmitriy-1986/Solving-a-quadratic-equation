@@ -19,6 +19,7 @@ firstForm.addEventListener('submit', (event) => {
           result.innerHTML = Math.sqrt(allValue).toFixed(2);
     } else {
           result.innerHTML = 'Введите в поле формы число!';
+          result.style.color = 'red';
     }
 
     firstForm.reset(); // Очищаем поля формы после ее отправки
