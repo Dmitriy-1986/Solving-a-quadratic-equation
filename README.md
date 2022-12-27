@@ -1,3 +1,2 @@
 # Solving-a-quadratic-equation
-> <a href="Решение квадратного уравнения:">
-> https://dmitriy-1986.github.io/Solving-a-quadratic-equation/</a>
+> <a href="https://dmitriy-1986.github.io/Solving-a-quadratic-equation/">Решение квадратного уравнения</a>
