@@ -17,9 +17,7 @@ firstForm.addEventListener('submit', (event) => {
     // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
     if(!isNaN(allValue)) {
           result.innerHTML = Math.sqrt(allValue).toFixed(2);
-       // result.innerHTML = 'Введите в поле формы число!';
     } else {
-       // result.innerHTML = Math.sqrt(allValue).toFixed(2);
           result.innerHTML = 'Введите в поле формы число!';
     }
 
