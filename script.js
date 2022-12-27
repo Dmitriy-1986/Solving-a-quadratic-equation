@@ -15,10 +15,12 @@ firstForm.addEventListener('submit', (event) => {
     // Метод Math.sqrt() возвращает квадратный корень числа
     // Метод toFixed() количество цифр после десятичной запятой
     // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
-    if(isNaN(allValue)) {
-        result.innerHTML = 'Введите в поле формы число!';
+    if(!isNaN(allValue)) {
+          result.innerHTML = Math.sqrt(allValue).toFixed(2);
+       // result.innerHTML = 'Введите в поле формы число!';
     } else {
-        result.innerHTML = Math.sqrt(allValue).toFixed(2);
+       // result.innerHTML = Math.sqrt(allValue).toFixed(2);
+          result.innerHTML = 'Введите в поле формы число!';
     }
 
     firstForm.reset(); // Очищаем поля формы после ее отправки
