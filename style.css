@@ -72,7 +72,6 @@ input[type="text"]:focus {
 }
 
 .result {
-    color: blue;
     font-weight: bold;
     font-size: 18px;
     text-align: center;
