@@ -9,8 +9,8 @@ const firstForm = document.querySelector('#first_form'),
 firstForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Отменить действия формы по умолчанию
 
-    // Принимаем данные из формы и преобразуем их в число
-    const allValue = +meaningA.value + +meaningB.value + +meaningC.value;
+    // Принимаем данные из формы и преобразуем их в число  Number
+    const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
 
     // Метод Math.sqrt() возвращает квадратный корень числа
     // Метод toFixed() количество цифр после десятичной запятой
