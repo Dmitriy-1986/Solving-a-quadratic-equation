@@ -9,7 +9,7 @@ const firstForm = document.querySelector('#first_form'),
 firstForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Отменить действия формы по умолчанию
 
-    // Принимаем данные из формы и преобразуем их в число  Number
+    // Принимаем данные из формы и преобразуем их в число с помощью Number()
     const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
 
     // Метод Math.sqrt() возвращает квадратный корень числа
