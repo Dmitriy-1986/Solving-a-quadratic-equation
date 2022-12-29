@@ -1,6 +1,6 @@
 'use strict';
 
-// Запуск скрипта после загрузки всего HTML
+// Обработка события DOMContentLoaded - для запуска скрипта после загрузки всего HTML
 window.addEventListener('DOMContentLoaded', () => {
     const firstForm = document.querySelector('#first_form'),
         meaningA = firstForm.querySelector('#meaning_a'),
