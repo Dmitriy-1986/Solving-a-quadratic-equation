@@ -18,7 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
         // Проверка на ошибки в обработке скрипта с помощью try{}catch(){}
         try {
             // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
-            if (!isNaN(allValue)) {
+            if(allValue <= 0) {
+                return result.innerHTML = 'Введите в поле цифру больше нуля!';
+            } else if (!isNaN(allValue)) {
                 // Метод Math.sqrt() возвращает квадратный корень числа
                 // Метод toFixed() количество цифр после десятичной запятой
                 result.innerHTML = `Результат: ${Math.sqrt(allValue).toFixed(2)}`;
