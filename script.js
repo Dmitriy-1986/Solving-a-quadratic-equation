@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Отменить действия формы по умолчанию (отменить перезагрузку страницы по клику на кнопку формы)
 
         // Принимаем данные из формы и преобразуем их в число с помощью Number()
-        const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
+        const allValue1 = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
 
         // Метод Math.sqrt() возвращает квадратный корень числа
         // Метод toFixed() количество цифр после десятичной запятой
