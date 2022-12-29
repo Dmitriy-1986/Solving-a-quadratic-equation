@@ -82,11 +82,3 @@ input[type="text"]:focus {
     font-size: 18px;
     text-align: center;
 }
-
-.res-blue {
-    color: rgb(0, 0, 255);
-}
-
-.res-red {
-    color: rgb(255, 0, 0);
-}
