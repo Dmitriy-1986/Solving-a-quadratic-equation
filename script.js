@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
         // Принимаем данные из формы и преобразуем их в число с помощью Number()
         const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
     
-        // Проверка на ошибки в обработке скрипта
+        // Проверка на ошибки в обработке скрипта с помощью try{}catch(){}
         try {
             // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
             if (!isNaN(allValue)) {
