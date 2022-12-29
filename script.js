@@ -20,11 +20,13 @@ window.addEventListener('DOMContentLoaded', () => {
         if (!isNaN(allValue)) {
             result.innerHTML = `Результат: ${Math.sqrt(allValue).toFixed(2)}`;
             // Задаем синюю окраску текста
-            result.style.color = 'blue';
+            //result.style.color = 'blue';
+            result.classList.add('res-blue');
         } else {
             result.innerHTML = 'Введите в поле формы число!';
             // Задаем красную окраску текста
-            result.style.color = 'red';
+            //result.style.color = 'red';
+            result.classList.add('res-red');
         }
 
         firstForm.reset(); // Очищаем поля формы после ее отправки
