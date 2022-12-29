@@ -3,9 +3,9 @@
 // Обработка события DOMContentLoaded - для запуска скрипта после загрузки всего HTML
 window.addEventListener('DOMContentLoaded', () => {
     const firstForm = document.querySelector('#first_form'),
-        meaningA = firstForm.querySelector('#meaning_a'),
-        meaningB = firstForm.querySelector('#meaning_b'),
-        meaningC = firstForm.querySelector('#meaning_c');
+          meaningA = firstForm.querySelector('#meaning_a'),
+          meaningB = firstForm.querySelector('#meaning_b'),
+          meaningC = firstForm.querySelector('#meaning_c');
 
     let result = document.querySelector('.result');
 
