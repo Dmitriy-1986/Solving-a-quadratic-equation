@@ -13,14 +13,14 @@ window.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Отменить действия формы по умолчанию (отменить перезагрузку страницы по клику на кнопку формы)
 
         // Принимаем данные из формы и преобразуем их в число с помощью Number()
-        const allValue1 = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
-
-        // Метод Math.sqrt() возвращает квадратный корень числа
-        // Метод toFixed() количество цифр после десятичной запятой
-        // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
+        const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
+    
         // Проверка на ошибки в обработке скрипта
         try {
+            // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
             if (!isNaN(allValue)) {
+                // Метод Math.sqrt() возвращает квадратный корень числа
+                // Метод toFixed() количество цифр после десятичной запятой
                 result.innerHTML = `Результат: ${Math.sqrt(allValue).toFixed(2)}`;
                 // Задаем синюю окраску текста
                 result.style.color = 'blue';
