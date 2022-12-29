@@ -17,14 +17,19 @@ window.addEventListener('DOMContentLoaded', () => {
         // Метод Math.sqrt() возвращает квадратный корень числа
         // Метод toFixed() количество цифр после десятичной запятой
         // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
-        if (!isNaN(allValue)) {
-            result.innerHTML = `Результат: ${Math.sqrt(allValue).toFixed(2)}`;
-            // Задаем синюю окраску текста
-            result.style.color = 'blue';
-        } else {
-            result.innerHTML = 'Введите в поле формы число!';
-            // Задаем красную окраску текста
-            result.style.color = 'red';
+        // Проверка на ошибки в обработке скрипта
+        try {
+            if (!isNaN(allValue)) {
+                result.innerHTML = `Результат: ${Math.sqrt(allValue).toFixed(2)}`;
+                // Задаем синюю окраску текста
+                result.style.color = 'blue';
+            } else {
+                result.innerHTML = 'Введите в поле формы число!';
+                // Задаем красную окраску текста
+                result.style.color = 'red';
+            }
+        } catch (e) {
+            result.innerHTML = `В скрипте допущена ошибка: ${e}`;
         }
 
         firstForm.reset(); // Очищаем поля формы после ее отправки
