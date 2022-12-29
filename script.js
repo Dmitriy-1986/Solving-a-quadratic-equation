@@ -19,7 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
         try {
             // Функция isNaN() определяет является ли литерал или переменная нечисловым значением
             if(allValue <= 0) {
-                return result.innerHTML = 'Введите в поле цифру больше нуля!';
+                result.innerHTML = 'Введено недопустимое значение!';
+                result.style.color = 'red';
+                return false;
             } else if (!isNaN(allValue)) {
                 // Метод Math.sqrt() возвращает квадратный корень числа
                 // Метод toFixed() количество цифр после десятичной запятой
