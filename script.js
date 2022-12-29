@@ -1,7 +1,7 @@
 'use strict';
 
-// Изолирую код в анонимную само-вызывающую функцию
-(function () {
+// Запуск скрипта после загрузки всего HTML
+window.addEventListener('DOMContentLoaded', () => {
     const firstForm = document.querySelector('#first_form'),
         meaningA = firstForm.querySelector('#meaning_a'),
         meaningB = firstForm.querySelector('#meaning_b'),
@@ -29,4 +29,4 @@
 
         firstForm.reset(); // Очищаем поля формы после ее отправки
     });
-}());
+});
