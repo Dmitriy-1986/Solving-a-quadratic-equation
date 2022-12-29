@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
         meaningC = firstForm.querySelector('#meaning_c'),
         result = document.querySelector('.result');
 
-    firstForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // Отменить действия формы по умолчанию
+    firstForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Отменить действия формы по умолчанию
 
         // Принимаем данные из формы и преобразуем их в число с помощью Number()
         const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
