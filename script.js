@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 result.style.color = 'red';
             }
         } catch (e) {
-            result.innerHTML = `В скрипте допущена ошибка: ${e}`;
+            result.innerHTML = `В JavaScript допущена ошибка: ${e}`;
         }
 
         firstForm.reset(); // Очищаем поля формы после ее отправки
