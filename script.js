@@ -21,11 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
             result.innerHTML = `Результат: ${Math.sqrt(allValue).toFixed(2)}`;
             // Задаем синюю окраску текста
             //result.style.color = 'blue';
+            // Добавить класс - синий цвет текста
             result.classList.add('res-blue');
         } else {
             result.innerHTML = 'Введите в поле формы число!';
             // Задаем красную окраску текста
             //result.style.color = 'red';
+            // Добавить класс - красный цвет текста
             result.classList.add('res-red');
         }
 
