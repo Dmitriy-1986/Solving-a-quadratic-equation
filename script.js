@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
         result = document.querySelector('.result');
 
     firstForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // Отменить действия формы по умолчанию
+        event.preventDefault(); // Отменить действия формы по умолчанию (отменить перезагрузку страницы по клику на кнопку формы)
 
         // Принимаем данные из формы и преобразуем их в число с помощью Number()
         const allValue = Number(meaningA.value) + Number(meaningB.value) + Number(meaningC.value);
